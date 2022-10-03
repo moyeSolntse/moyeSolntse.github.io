@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </script>
+</head>
+<body>
+
+    <h1><a href="./archive.html">Archive</a></h1>
+
+    <font size="3" face="times" color="black">
+        \( G \) is a finite group, \( H \) and \( K \) are subgroups of \( G \). gcd([\( G \):\( H \)], [\( G \):\( K \)]) = 1.<br>
+        Prove that \( G = HK \).<br><br><br>
+
+        Given \( H \leq G \) and \( K\leq G \), we have \(\ H\cap K \leq G \).<br><br>
+
+        According to Lagrange's Theorem, \( [G:H\cap K]=[G:H][H:H\cap K]=[G:K][K:H\cap K]. \)<br><br>
+
+        Given that \( [G:H][H:H\cap K]=[G:K][K:H\cap K] \)<br>
+        and that gcd\(([G:H], \ [G:K])=1 \)<br>
+        \(\Rightarrow [G:H] \ \Big|  \ [K:H \cap K] \)<br><br>
+
+        \( [G:H] \ \Big|  \ [K:H \cap K] \)<br>
+        \( \Rightarrow\frac{|G|}{|H|} \Bigg| \frac{|K|}{|H \cap K|} \)<br>
+        \( \Rightarrow |G| \Bigg| \frac{|K||H|}{|H\cap K|} = |HK| \)<br>
+        \( \Rightarrow |G|\leq|HK|  \ \ \ \ \ (\because |HK|\ne 0) \)<br><br>
+        \( H \) and \( K \) are subgroups of \( G \). Hence, \( HK \subseteq G \Rightarrow G = HK \)<br>
+        <br>Q.E.D.<br>
+
+        <br><br><br>Postscript:<br>
+        <img src="post1.png" width=550 />
+    </font>
+</body>
+</html>
